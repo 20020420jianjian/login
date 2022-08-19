@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./hutao1.jpg"); /* 在这里插入一张你想要设置的背景图片 */
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 540px;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+.box > h2 {
+  color: rgb(255, 255, 255, 0.9);
+  margin-bottom: 50px;
+}
+.box .input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.box .input-box > label {
+  margin-top: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255, 0.9);
+}
+.input-box input {
+  width: 250px;
+  height: 34px;
+  color: black(255, 255, 255, 0.9);
+  background: rgb(255, 255, 255, 0.3);
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  transition: 0.2s;
+  padding: 0 10px;
+  outline: none;
+}
+.input-box input :focus {
+  border: 1px solid rgb(255, 255, 255, 0.8);
+}
+.box a {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  color: white;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: end;
+}
+.box .btn-box > div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+
+.box .btn-box > div > button {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 120px;
+  height: 34px;
+  align-items: center;
+  color: rgb(255, 255, 255, 0.9);
+  border-radius: 3px;
+  border: 1px solid rgb(58, 58, 58, 0.3); /* 这里是对两个按钮设置的背景颜色修改不同图片时候可以按照你的喜好插入 */
+  background: rgb(58, 58, 58, 0.3);
+  /* transition: 0.2s; */
+}
+/* 这里是鼠标移动上去的变色同理按你的喜好设置 */
+.box .btn-box > div > button:hover {
+  border: 1px solid rgb(59, 47, 49, 0.3);
+  background: rgb(59, 47, 49, 0.9);
+}
+.box .btn-box > div > button:nth-child(2) {
+  margin-left: 20px;
+}
